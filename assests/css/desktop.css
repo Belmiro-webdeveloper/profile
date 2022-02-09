@@ -1,0 +1,126 @@
+
+
+@media only screen and (min-width:992px){
+	
+
+
+    body{
+        font-family:Arial,helvetica,verdana,sans-serif;
+        margin:0px;
+    }
+    
+.scroll_bar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+ }
+ .scroll_bar::-webkit-scrollbar {
+     width: 12px;
+ }
+ 
+ .scroll_bar::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+     border-radius: 10px;
+ }
+ 
+ .scroll_bar::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+ }
+
+
+/*  Scrolling bars styles */
+
+.scroll_bar::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #ccc;
+    border-radius:20px;
+
+}
+.scroll_bar::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(rgba(10, 20, 78, 0.94),rgba(182, 190, 206, 0.94));
+    border-radius:20px;
+    
+}
+
+.scroll_bar::-webkit-scrollbar-thumb:hover{
+    background-image: linear-gradient(rgba(0, 38, 252, 0.94),rgba(1, 9, 14, 0.94));
+}
+.scroll_bar::-webkit-scrollbar-button{
+   display:none;
+}
+/*End of scrolling bar*/
+/*  Scrolling bars styles */
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px #ccc;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(rgba(10, 20, 78, 0.94),rgba(182, 190, 206, 0.94));
+    border-radius:20px;
+    
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-image: linear-gradient(rgba(0, 38, 252, 0.94),rgba(1, 9, 14, 0.94));
+}
+::-webkit-scrollbar-button{
+   display:none;
+}
+/*End of scrolling bar*/
+
+
+.content-out{
+    width:50%;
+    padding: 3px;
+}
+.theme-ball>div{
+    position: relative;
+    top:5%;
+    right:-4%;
+    width:50%;
+}
+
+
+.name_intro{
+    font-size: 4em;
+    text-shadow: 4px 1px black; 
+ }
+ 
+.theme-ball{
+    height:50em;
+    width:50em;
+    top:0px;
+    right:0px;
+}
+
+.name{
+    top:0px;
+}
+
+.project-card{
+    width:25%;
+}
+
+.pic_intro{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    }
+
+    #testimonial .screen_d{
+       width:40%;
+       margin-left: auto!important;
+       margin-right: auto!important;
+    }
+    #testimonial{
+        display:flex;
+        flex-direction: row;
+        
+     }
+     .d_hide{
+         display: none;
+     }
+
+}    
