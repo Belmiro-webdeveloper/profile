@@ -1,0 +1,89 @@
+
+@media only screen and (min-width:600px) and (max-width:992px){
+
+
+	body{
+		font-family:Arial,helvetica,verdana,sans-serif;
+		margin:0px;
+	}
+	
+	h1{
+		font-size:2.5em;
+	}
+	h3{
+		font-size:1.5em;
+	}
+	
+	p{
+	font-size:16px;
+    }
+	blockquote{
+		font-size: 14px;
+	}
+    
+.content-out{
+    width:60%;
+    padding: 2.1px;
+}
+
+.theme-ball>div{
+    position: relative;
+    top:70%;
+    width:60%;
+}
+
+
+.name_intro{
+    font-size: 3em;
+ }
+ 
+.theme-ball{
+    height:50em;
+    width:50em;
+    top:0px;
+    right:0px;
+}
+
+.name{
+    top:0px;
+}
+
+.pic_intro{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+    }
+    
+    .side_panel{
+        position: fixed;
+        top:0px;
+        right:0px;
+        width:80%;
+        animation:animate__fadeInRight 1s linear;
+
+    }
+    .p_hide{
+        display: none;
+    }
+    .p_show{
+        display:block;
+    }
+    #testimonial .screen_d{
+        width:70%;
+        flex-direction: row;
+        margin-left: auto!important;
+        margin-right: auto!important;
+     }
+     #testimonial{
+        flex-direction: column;
+        
+     }
+     
+    .menu_bar{
+        right:15px;
+        top:5px;
+        z-index:10;
+    }
+
+
+}

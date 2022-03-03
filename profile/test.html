@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="En">
+<head>
+<title>Belmiro Mohlala</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="refresh" content=""/>
+
+<link rel="stylesheet" type="text/css" href="bootstrap-5.0.0-beta1-dist\css\bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="assests/css/phone.css">
+<link rel="stylesheet" type="text/css" href="assests/css/desktop.css">
+<link rel="stylesheet" type="text/css" href="assests/css/tablet.css">
+<link rel="stylesheet" type="text/css" href="assests/css/main.css">
+
+
+<script src="assests/js/jquery-3.5.1.min.js"></script>
+<script src="https://github.com/mrdoob/three.js/blob/master/examples/jsm/capabilities/WebGL.js"></script>
+<script src="assests/js/three.js"></script>
+<script src="assests/js/main.js"></script>
+
+<script src="bootstrap-5.0.0-beta1-dist\js\bootstrap.min.js"></script>
+
+<noscript>Your device does not support javascript</noscript>
+
+
+<meta name="author" content="Belmiro Mohlala"/>
+<meta name="theme-color" content="#091653"/>
+<meta name="description" content = "Belmiro Mohlala profile " >
+<meta name="keywords" content="Belmiro Mohlala, South Africa web developers, SA developers, Burgersfort web developer, Upwork web developer">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="shortcut icon" href="assests/img/profile_pic.jpg" />
+
+
+</head>
+
+<body class="m-0 p-0" >
+    <div class="container-fluid"><h1> Three JS practice </h1></div>
+<script>
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
+document.body.appendChild( renderer.domElement );
+const geometry = new THREE.BoxGeometry();
+const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+const cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.set( 0, 0, 6);
+camera.lookAt( 0, 0, 0 ); //Changing y-coordinate
+
+//this function is to animate the box
+const line = new THREE.LineBasicMaterial( { color: 0xffffff } );
+const points = [];
+points.push( new THREE.Vector3( - 3, 0, 0 ) );
+points.push( new THREE.Vector3( 0, 3, 0 ) );
+points.push( new THREE.Vector3( 3, 0, 0) );
+points.push( new THREE.Vector3( 0, 0, 3) );
+const geometry1 = new THREE.BufferGeometry().setFromPoints( points );
+const line1 = new THREE.Line( geometry1, line);
+
+scene.fog = new THREE.Fog( 0x000000, 250, 1400 );
+
+scene.add( line1 );
+function animate() {
+   
+	requestAnimationFrame( animate );
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.01;
+    line1.rotation.y += 0.01;
+    line1.rotation.z += 0.01;
+    line1.rotation.x += 0.01;
+    renderer.render( scene, camera );
+
+}
+
+animate();
+
+
+</script>
+
+</body>
+</html>

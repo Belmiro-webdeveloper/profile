@@ -1,0 +1,117 @@
+
+@media only screen and (max-width:600px){
+
+
+    body{
+        font-family:Arial,helvetica,verdana,sans-serif;
+        margin:0px;
+        background:white;
+    }
+    h1{
+        font-size:2em;
+    }
+    h2{
+        font-size:1.6em;
+    }
+    .danger{
+        color:red;
+    }
+    h3{
+        font-size:1.5em;
+    }
+    h4{
+        font-size:14px;
+    }
+    p{
+        font-size:16px;
+    }
+    span{
+        font-size:14px;
+    }
+    blockquote{
+        font-size:12px;
+    }
+    
+    ul li{
+        font-size:12px;
+    }
+    .side_panel{
+        position: fixed;
+        top:0px;
+        right:0px;
+        width:80%;
+        animation:animate__fadeInRight 1s linear;
+
+    }
+    .p_hide{
+        display: none;
+    }
+    .p_show{
+        display:block;
+    }
+    .menu_bar{
+        right:15px;
+        top:5px;
+        z-index:10;
+    }
+    #map{
+        height:10em;
+    }
+
+    
+.content-out{
+    width:80%;
+    padding: 1.7px!important;
+}
+.p-small{
+    font-size:10px!important;
+}
+
+.theme-ball>div{
+    position: absolute;
+    right:3%;
+    top:65%;
+    width:40%;
+    float: right;
+    
+}
+
+.name_intro{
+    font-size: 2.3em;
+ }
+
+ 
+.theme-ball{
+    height:30em;
+    width:30em;
+    top:0px;
+    right:0px;
+}
+
+.name{
+    top:1em;
+}
+
+
+.project-card{
+    width:95%;
+}
+
+
+.pic_intro{
+    width:75px;
+    height:75px;
+    border-radius: 50%;
+    }
+    
+    #testimonial .screen_d{
+        width:95%;
+       
+        margin-left: auto!important;
+        margin-right: auto!important;
+     }
+     #testimonial{
+        flex-direction: column;
+        
+     }
+}
