@@ -122,5 +122,14 @@
      .d_hide{
          display: none;
      }
+     .iphone{
+         position:absolute;
+         top:0px;
+      
+         right:-10%;
+     }
+     .projects{
+         overflow-x: scroll;
+     }
 
 }    
