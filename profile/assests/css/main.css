@@ -286,6 +286,9 @@ canvas {
     
 
 }
+.inside_projects{
+    width:150em!important;
+}
 .opacity-0{
     opacity:0;
 }

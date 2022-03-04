@@ -128,5 +128,8 @@
       
          right:-10%;
      }
+     .projects{
+         overflow-x: scroll;
+     }
 
 }    
