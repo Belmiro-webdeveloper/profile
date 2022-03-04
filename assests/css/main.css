@@ -286,6 +286,9 @@ canvas {
     
 
 }
+.inside_projects{
+    width:150em!important;
+}
 .opacity-0{
     opacity:0;
 }
@@ -323,4 +326,7 @@ canvas {
         transform: rotate(360deg);
     }
     
+}
+.hover:hover{
+opacity:0.5 !important;
 }
